@@ -1,0 +1,45 @@
+{
+  "entries": [
+    {
+      "run_id": "RUN-001",
+      "timestamp": "2026-11-22T09:34:43.664954+00:00",
+      "step": "step_1_intake",
+      "model": "gemini-2.5-pro",
+      "input_tokens": 14500,
+      "output_tokens": 3200,
+      "total_tokens": 17700,
+      "cost_usd": 0.050125,
+      "cost_rub": 4.76,
+      "usd_rub_rate": 95.0,
+      "status": "completed",
+      "artifacts": [
+        "research/sources.json",
+        "research/extracted/SRC-01_Бриф_по_стратегу_Мегафона.txt",
+        "state/task_brief.md"
+      ],
+      "notes": "Инжест SRC-01 (PDF 11 стр., CLEAN) и формирование task_brief.md"
+    },
+    {
+      "run_id": "RUN-002",
+      "timestamp": "2026-11-22T09:34:43.691270+00:00",
+      "step": "step_2_3_evidence_synthesis",
+      "model": "gemini-2.5-pro",
+      "input_tokens": 21000,
+      "output_tokens": 6800,
+      "total_tokens": 27800,
+      "cost_usd": 0.09425,
+      "cost_rub": 8.95,
+      "usd_rub_rate": 95.0,
+      "status": "paused_hitl",
+      "artifacts": [
+        "research/research_plan.md",
+        "research/synthetic_interviews.md",
+        "outputs/evidence_synthesis.md",
+        "state/workflow_state.json",
+        "state/session_log.md"
+      ],
+      "notes": "План исследований, 4 детерминированных расчёта [CALC], 2 синтетических интервью [СИНТЕТИКА — НЕ ДОКАЗЫВАЕТ СПРОС], синтез и пробелы G1-G7; остановка на HITL (Шаг 1/3)"
+    }
+  ],
+  "updated_at": "2026-11-22T09:34:43.691410+00:00"
+}

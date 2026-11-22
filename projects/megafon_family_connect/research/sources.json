@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "src_id": "SRC-01",
+      "filename": "Бриф по стратегу Мегафона.pdf",
+      "original_path": "/Users/onnissay/Documents/megafon-product-strategist/demo_input/Бриф по стратегу Мегафона.pdf",
+      "extracted_path": "research/extracted/SRC-01_Бриф_по_стратегу_Мегафона.txt",
+      "sha256": "558d2c665caa4f4954135c8bbfb69d791e398dcdc5b625d5ded7bdb2d0eb0fa5",
+      "char_count": 29877,
+      "description": "Исходный бриф МегаФона (Стратег Фабрики продуктов)",
+      "ingested_at": "2026-11-22T09:29:55.267462+00:00",
+      "injection_flags": [],
+      "security_status": "CLEAN",
+      "file_type": "pdf",
+      "page_count": 11
+    }
+  ],
+  "updated_at": "2026-11-22T09:29:55.267599+00:00"
+}

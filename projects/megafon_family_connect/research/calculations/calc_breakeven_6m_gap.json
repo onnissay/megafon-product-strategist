@@ -1,0 +1,19 @@
+{
+  "calculation": "breakeven",
+  "inputs": {
+    "fixed_cost_rub": 6000000.0,
+    "monthly_opex_rub": 0.0,
+    "unit_margin_monthly_rub": 500.0,
+    "avg_lifetime_months": 6.0,
+    "cac_or_promo_rub": 0.0,
+    "monthly_new_units": 400.0
+  },
+  "results": {
+    "unit_ltv_contribution_rub": 3000.0,
+    "unit_economics_positive": true,
+    "breakeven_units_for_fixed_cost": 2000,
+    "monthly_units_to_cover_opex": 0,
+    "payback_months_at_pace": 8,
+    "steady_state_monthly_net_rub": 1200000.0
+  }
+}
