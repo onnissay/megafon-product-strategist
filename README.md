@@ -8,29 +8,73 @@
 
 ## 1. Пошаговая инструкция первого запуска (без скрытых настроек)
 
-### Шаг 1. Клонирование и установка Python-зависимостей
+### Шаг 1–2. Клонирование, установка зависимостей и проверка инструментов (Tier 0)
 Требуется **Python 3.10+**. Внешние API-ключи, базы данных или платные сторонние сервисы для работы Python-инструментов **не требуются** — все утилиты полностью локальны и офлайн-детерминированы.
-
-```bash
-git clone <URL_РЕПОЗИТОРИЯ> megafon-product-strategist
-cd megafon-product-strategist
-
-python3 -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
 
 Состав `requirements.txt`: `pypdf>=4.0.0`, `pandas>=2.0.0`, `numpy>=1.26.0`, `openpyxl>=3.1.0`.
 
-### Шаг 2. Быстрая проверка детерминированных инструментов (Tier 0)
-Убедитесь, что все 4 CLI-утилиты запускаются без ошибок:
+Выберите вашу операционную систему:
 
+<details open>
+<summary><b>🪟 Windows (PowerShell)</b></summary>
+
+1. Клонируйте репозиторий и перейдите в папку проекта:
+```powershell
+git clone [https://github.com/onnissay/megafon-product-strategist.git](https://github.com/onnissay/megafon-product-strategist.git)
+cd megafon-product-strategist
+```
+
+2. Создайте и активируйте виртуальное окружение:
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+*(Если PowerShell заблокирует запуск скрипта, сначала выполните `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process` и повторите активацию.)*
+
+3. Установите зависимости:
+```powershell
+pip install -r requirements.txt
+```
+
+4. Убедитесь, что все 4 детерминированных CLI-инструмента (Tier 0) запускаются без ошибок:
+```powershell
+python tools/doc_ingestor.py --help
+python tools/unit_econ_calc.py --help
+python tools/ledger.py status --project megafon_family_connect
+python tools/decision_tracker.py list --project megafon_family_connect
+```
+
+</details>
+
+<details>
+<summary><b>🍎 macOS / 🐧 Linux (bash / zsh)</b></summary>
+
+1. Клонируйте репозиторий и перейдите в папку проекта:
+```bash
+git clone [https://github.com/onnissay/megafon-product-strategist.git](https://github.com/onnissay/megafon-product-strategist.git)
+cd megafon-product-strategist
+```
+
+2. Создайте и активируйте виртуальное окружение:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+3. Установите зависимости:
+```bash
+pip install -r requirements.txt
+```
+
+4. Убедитесь, что все 4 детерминированных CLI-инструмента (Tier 0) запускаются без ошибок:
 ```bash
 python3 tools/doc_ingestor.py --help
 python3 tools/unit_econ_calc.py --help
 python3 tools/ledger.py status --project megafon_family_connect
 python3 tools/decision_tracker.py list --project megafon_family_connect
 ```
+
+</details>
 
 ### Шаг 3. Запуск агента в вашей CLI / IDE-среде
 
