@@ -2,15 +2,19 @@
   "project_name": "megafon_family_connect",
   "display_title": "Связь для близких и собственных устройств",
   "role": "Стратег Фабрики продуктов",
-  "current_step": 3,
-  "step_status": "paused_hitl",
-  "hitl_pause": true,
-  "hitl_checkpoint": "Step 1/3 — Подтверждение брифа, пробелов данных и фокуса перед Шагом 4 (Опции и Red-Team)",
+  "current_step": 6,
+  "step_status": "completed",
+  "hitl_pause": false,
+  "hitl_checkpoint": null,
   "completed_steps": [
     1,
     2,
-    3
+    3,
+    4,
+    5,
+    6
   ],
+  "selected_option": "Пивот Опция Д-rev — 72ч платёжные алерты (семьи + роутеры) + глубокий ремонт воронки приглашений (трафиковые алерты ГБ заморожены из-за 4ч лага биллинга)",
   "sources": [
     {
       "src_id": "SRC-01",
@@ -29,21 +33,65 @@
       "projects/megafon_family_connect/research/calculations/calc_ab_restriction_12_to_9.json",
       "projects/megafon_family_connect/research/calculations/calc_ab_activation_45_to_60.json",
       "projects/megafon_family_connect/research/calculations/calc_retention_16k_sims.json",
-      "projects/megafon_family_connect/research/calculations/calc_breakeven_6m_gap.json"
+      "projects/megafon_family_connect/research/calculations/calc_breakeven_6m_gap.json",
+      "projects/megafon_family_connect/research/calculations/optB_pess_12m.json",
+      "projects/megafon_family_connect/research/calculations/optB_base_12m.json",
+      "projects/megafon_family_connect/research/calculations/optB_opt_12m.json",
+      "projects/megafon_family_connect/research/calculations/optC_pess_6m.json",
+      "projects/megafon_family_connect/research/calculations/optC_base_6m.json",
+      "projects/megafon_family_connect/research/calculations/optC_opt_6m.json",
+      "projects/megafon_family_connect/research/calculations/optC_base_12m.json",
+      "projects/megafon_family_connect/research/calculations/optD_pess_6m.json",
+      "projects/megafon_family_connect/research/calculations/optD_base_6m.json",
+      "projects/megafon_family_connect/research/calculations/optD_opt_6m.json",
+      "projects/megafon_family_connect/research/calculations/optD_base_12m.json",
+      "projects/megafon_family_connect/research/calculations/optE_pess_6m.json",
+      "projects/megafon_family_connect/research/calculations/optE_base_6m.json",
+      "projects/megafon_family_connect/research/calculations/optE_opt_6m.json",
+      "projects/megafon_family_connect/research/calculations/optE_base_12m.json",
+      "projects/megafon_family_connect/research/calculations/optE_pess_12m.json",
+      "projects/megafon_family_connect/research/calculations/optE_year3_runrate_12m.json",
+      "projects/megafon_family_connect/research/calculations/be_optC_dev.json",
+      "projects/megafon_family_connect/research/calculations/be_optD_dev.json",
+      "projects/megafon_family_connect/research/calculations/be_optE_dev.json",
+      "projects/megafon_family_connect/research/calculations/be_optE_q2_pilot.json",
+      "projects/megafon_family_connect/research/calculations/be_gap_6m_with_opex.json",
+      "projects/megafon_family_connect/research/calculations/be_residual_2_25m_gap.json",
+      "projects/megafon_family_connect/research/calculations/ab_activation_45_to_55_100wk.json",
+      "projects/megafon_family_connect/research/calculations/ab_restriction_12_to_9_350wk.json",
+      "projects/megafon_family_connect/research/calculations/ab_restriction_12_to_8_250wk.json",
+      "projects/megafon_family_connect/research/calculations/ab_restriction_20_to_15_200wk.json",
+      "projects/megafon_family_connect/research/calculations/ab_router_15_to_10_40wk.json",
+      "projects/megafon_family_connect/research/calculations/ab_retention_60d_94_to_955.json",
+      "projects/megafon_family_connect/research/calculations/ab_alert_vs_cabinet_9_to_7.json",
+      "projects/megafon_family_connect/research/calculations/rev01_nopivot_6m.json",
+      "projects/megafon_family_connect/research/calculations/rev01_nopivot_12m.json",
+      "projects/megafon_family_connect/research/calculations/rev01_pivot_pess_6m.json",
+      "projects/megafon_family_connect/research/calculations/rev01_pivot_base_6m.json",
+      "projects/megafon_family_connect/research/calculations/rev01_pivot_opt_6m.json",
+      "projects/megafon_family_connect/research/calculations/rev01_pivot_base_12m.json",
+      "projects/megafon_family_connect/research/calculations/rev01_pivot_pess_12m.json",
+      "projects/megafon_family_connect/research/calculations/rev01_be_pivot_6m.json",
+      "projects/megafon_family_connect/research/calculations/rev01_be_pivot_12m.json",
+      "projects/megafon_family_connect/research/calculations/rev01_ab_invite_35_to_45_100wk.json",
+      "projects/megafon_family_connect/research/calculations/rev01_ab_invite_35_to_50_100wk.json",
+      "projects/megafon_family_connect/research/calculations/rev01_ab_payalert_15_to_10_200wk.json"
     ],
     "evidence_synthesis": "projects/megafon_family_connect/outputs/evidence_synthesis.md",
+    "options_and_red_team": "projects/megafon_family_connect/outputs/options_and_red_team.md",
+    "final_strategy": "projects/megafon_family_connect/outputs/final_strategy.md",
+    "decision_revision_01": "projects/megafon_family_connect/outputs/decision_revision_01.md",
+    "decisions_registry": "projects/megafon_family_connect/state/decisions.json",
     "run_ledger": "projects/megafon_family_connect/state/run_ledger.json",
     "session_log": "projects/megafon_family_connect/state/session_log.md"
   },
   "open_questions": [
-    "Подтверждение постановки задачи, KPI-разрыва и ресурсного лимита 3 чел.-мес. разработки в Q2 (task_brief.md).",
-    "Приоритетный набор стратегических опций для Шага 4 (помимо обязательных «Оставить как есть» и «Закрыть / заморозить»).",
-    "Наличие дополнительных внутренних данных по пробелам G1–G6 (воронка приглашений, частота перебоев/нед, когортный отток, лаг биллинга, стоимость 1 чел.-мес.) для инжеста как SRC-02."
+    "Утверждение руководителем пивота в Опцию Д-rev (заморозка трафиковых алертов ГБ -> 72ч платёжные алерты + ремонт воронки приглашений 35%->45..50%).",
+    "Оценка стоимости доработки биллинга до <= 30 мин (экономический потолок целесообразности ~1.5 млн руб.)."
   ],
   "next_actions": [
-    "Получить подтверждение пользователя на точке HITL (Шаг 1/3).",
-    "При наличии новых данных — инжестировать их через tools/doc_ingestor.py (SRC-02+).",
-    "Перейти к Шагу 4 (skills/options_and_red_team.md): >=3 опции, расчёт юнит-экономики через tools/unit_econ_calc.py и обязательный аудит subagents/red_team_critic.md."
+    "Провести A/B-тест ремонта приглашений (340–752 пригл., 4.4–8.5 нед.) и объединённого 72ч платёжного алерта семьи+роутеры (1 372 плательщика, 8.86 нед.).",
+    "На развилке конца Q2 / начала Q3 проверить пороги: принятие >= 45% и снижение неоплат >= 5 п.п., иначе переход к Опции Б."
   ],
-  "updated_at": "2026-11-22T09:35:00+00:00"
+  "updated_at": "2026-11-22T12:30:00+00:00"
 }

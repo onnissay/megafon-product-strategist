@@ -1,0 +1,24 @@
+{
+  "calculation": "ab_sample_size",
+  "inputs": {
+    "p1_baseline": 0.09,
+    "p2_target": 0.07,
+    "absolute_mde": -0.02,
+    "relative_mde_pct": -22.22,
+    "alpha": 0.05,
+    "power": 0.8,
+    "ratio_treatment_to_control": 1.0,
+    "two_sided": true,
+    "weekly_enrollment": 400.0,
+    "maturation_days": 7
+  },
+  "results": {
+    "n_control": 2888,
+    "n_treatment": 2888,
+    "total_sample_size": 5776,
+    "enrollment_weeks": 14.44,
+    "maturation_weeks": 1.0,
+    "total_duration_weeks": 15.44,
+    "feasible_within_12_weeks": false
+  }
+}

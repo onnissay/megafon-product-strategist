@@ -39,7 +39,60 @@
         "state/session_log.md"
       ],
       "notes": "План исследований, 4 детерминированных расчёта [CALC], 2 синтетических интервью [СИНТЕТИКА — НЕ ДОКАЗЫВАЕТ СПРОС], синтез и пробелы G1-G7; остановка на HITL (Шаг 1/3)"
+    },
+    {
+      "run_id": "RUN-003",
+      "timestamp": "2026-11-22T10:06:26.956940+00:00",
+      "step": "step_4_options_and_red_team",
+      "model": "gemini-2.5-pro",
+      "input_tokens": 38000,
+      "output_tokens": 11500,
+      "total_tokens": 49500,
+      "cost_usd": 0.1625,
+      "cost_rub": 15.44,
+      "usd_rub_rate": 95.0,
+      "status": "completed",
+      "artifacts": [
+        "projects/megafon_family_connect/outputs/options_and_red_team.md"
+      ],
+      "notes": "Сравнение 5 опций (А-Д), 22 детерминированных расчёта через unit_econ_calc.py (retention-profit, breakeven, ab-size), обязательный Red-Team аудит (4 P0-блокера переведены в гейты Q1 и Guardrails Q2), выбрана Опция Д."
+    },
+    {
+      "run_id": "RUN-004",
+      "timestamp": "2026-11-22T10:06:26.978964+00:00",
+      "step": "step_5_final_strategy",
+      "model": "gemini-2.5-pro",
+      "input_tokens": 42000,
+      "output_tokens": 14500,
+      "total_tokens": 56500,
+      "cost_usd": 0.1975,
+      "cost_rub": 18.76,
+      "usd_rub_rate": 95.0,
+      "status": "completed",
+      "artifacts": [
+        "projects/megafon_family_connect/outputs/final_strategy.md",
+        "projects/megafon_family_connect/state/decisions.json"
+      ],
+      "notes": "Собрана итоговая стратегия из 5 частей + Executive Summary, коммуникационная стратегия, дополненная таблица 5 KPI, поквартальный план Q1-Q4, ориентир 3-го года, риски с kill-switch, финальный Red-Team аудит (ПРОЙДЕНО), зарегистрированы DEC-01..DEC-04."
+    },
+    {
+      "run_id": "RUN-005",
+      "timestamp": "2026-11-22T10:52:01.146397+00:00",
+      "step": "step_6_decision_revision_01",
+      "model": "gemini-2.5-pro",
+      "input_tokens": 19500,
+      "output_tokens": 6500,
+      "total_tokens": 26000,
+      "cost_usd": 0.089375,
+      "cost_rub": 8.49,
+      "usd_rub_rate": 95.0,
+      "status": "completed",
+      "artifacts": [
+        "projects/megafon_family_connect/outputs/decision_revision_01.md",
+        "projects/megafon_family_connect/state/decisions.json"
+      ],
+      "notes": "Шаг 6: check-impact по фактам середины Q2 (лаг биллинга 4ч + принятие приглашения 35%), 12 пересчётов rev01_*.json через unit_econ_calc.py, пересмотр DEC-01..DEC-04 (revised), рекомендация пивота Д-rev."
     }
   ],
-  "updated_at": "2026-11-22T09:34:43.691410+00:00"
+  "updated_at": "2026-11-22T10:52:01.146538+00:00"
 }

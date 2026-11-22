@@ -1,0 +1,28 @@
+{
+  "calculation": "retention_profit",
+  "inputs": {
+    "base_users": 20000,
+    "baseline_churn_monthly": 0.03,
+    "new_churn_monthly": 0.027,
+    "churn_reduction_pp": 0.3,
+    "arpu_rub": 500.0,
+    "margin": 1.0,
+    "horizon_months": 6,
+    "promo_cost_per_user_rub": 0.0,
+    "fixed_cost_rub": 4200000.0,
+    "cannibalization_per_user_monthly_rub": 10.0
+  },
+  "results": {
+    "baseline_user_months": 108011.44,
+    "new_user_months": 109156.74,
+    "incremental_user_months": 1145.31,
+    "saved_users_end_of_horizon": 311.54,
+    "gross_incremental_margin_rub": 572653.15,
+    "cannibalization_loss_rub": 1091567.43,
+    "total_promo_cost_rub": 0.0,
+    "fixed_cost_rub": 4200000.0,
+    "net_incremental_profit_rub": -4718914.29,
+    "roi_pct": -112.36,
+    "payback_month": null
+  }
+}
